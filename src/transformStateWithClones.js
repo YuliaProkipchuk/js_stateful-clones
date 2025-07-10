@@ -31,6 +31,7 @@ function transformStateWithClones(state, actions) {
           delete stateCopy[key];
         }
         stateHistory.push({ ...stateCopy });
+        break;
       }
     }
   }
